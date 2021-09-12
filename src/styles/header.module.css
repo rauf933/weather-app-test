@@ -1,0 +1,139 @@
+
+
+.header{
+    padding-top: 66px;
+}
+
+.header__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0px;
+}
+
+.header__top_city h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header_top_units{
+    position: relative;
+    padding-left: 8px;
+}
+
+.header_top_units:before{
+    content: 'º';
+    position: absolute;
+    font-size: 18px;
+    left: -8px;
+    top: 15%;
+    color: rgba(255,255,255,.4);
+}
+
+
+.header_top_units > div{
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.4);
+}
+
+
+.header_top_units > div button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: rgba(255,255,255,.4);
+    background-color: transparent;
+    padding: 5px 14px;
+    font-size: 18px;
+}
+
+.header_top_units > div .active{
+    background-color: rgba(255,255,255,.4);
+    color: #fff;
+}
+
+.button_accept{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button_accept > span{
+    color: #1086FF;
+    margin-left: 64px;
+}
+
+
+.header__bot{}
+
+.header__bot button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(255,255,255,.6);
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 25px;
+}
+
+.header__bot_defineLocation > svg{
+    transform: rotate(11deg);
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 769px){
+    .header__top_city h1{
+        font-size: 40px;
+    }
+
+    .header__bot{
+        padding-top: 8px;
+    }
+
+    .header__bot button,
+    .header_top_units > div button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 431px){
+    .header__top_city h1{
+        font-size: 25px;
+    }
+
+    .header__bot button,
+    .header_top_units > div button{
+        font-size: 14px;
+    }
+
+    .header__bot_defineLocation svg{
+        width: 15px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 381px){
+
+    .header__bot_defineLocation svg{
+        width: 12px;
+        height: 16px;
+    }
+    .header__bot button{
+        padding: 6px 0px;
+    }
+
+
+}
+
+

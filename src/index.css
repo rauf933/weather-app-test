@@ -1,0 +1,75 @@
+/*------Fonts----*/
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url('./fonts/Lato-Regular.ttf');
+  src: local('Lato Regular'),  url('./fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: url('./fonts/Lato-Black.ttf');
+  src: local('Lato Black'),  url('./fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  src: url('./fonts/Lato-Bold.ttf');
+  src: local('Lato Bold'),  url('./fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+/*----- Variables----*/
+
+:root {
+  --main-color-blue: #498CEC;
+
+  --col-1: calc(100% / 12);
+  --col-2: calc(100% / 12*2);
+  --col-3: calc(100% / 12*3);
+  --col-4: calc(100% / 12*4);
+  --col-5: calc(100% / 12*5);
+  --col-6: calc(100% / 12*6);
+  --col-7: calc(100% / 12*7);
+  --col-8: calc(100% / 12*8);
+  --col-9: calc(100% / 12*9);
+  --col-10: calc(100% / 12*10);
+  --col-11: calc(100% / 12*11);
+  --col-12: 100%;
+}
+
+.d-none{display: none;}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif!important;
+  background-color: var(--main-color-blue);
+}
+
+
+/*------- Main Content Styles----*/
+
+.container{
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+
+@media screen and (max-width: 768px){
+  .container{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+
+
+
+
